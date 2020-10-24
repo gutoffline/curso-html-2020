@@ -48,13 +48,128 @@ header{
     color: black;
 }
 
+h1{
+    font-size: 70px;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
 
+.btn{
+    border: 1px solid #ffffff;
+    padding: 10px 30px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
 
+.btn:hover{
+    background: #ffffff;
+    color: #000000;
+}
 
+#pagina-home main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
 
-
-
+#pagina-galeria,
 #pagina-servicos{
     height: 100vh;
-    background: violet;
+    padding-left: 10px;
+}
+
+table{
+    border: 1px solid black;
+    padding: 3px;
+    width: 50%;
+    text-align: center;
+    border-collapse: collapse;
+    /* border-spacing: 10px; */
+}
+
+td{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#pagina-servicos main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+caption, th{
+    font-weight: bold;
+    font-size: 18px;
+    background: #555;
+    color: white;
+    padding: 10px 0;
+}
+
+th{
+    width: 50%;
+}
+
+tbody tr:nth-child(even){
+    background: #f2f2f2;
+}
+
+    /* background-color: #f2f2f2; */
+
+#pagina-galeria{
+    background: linear-gradient(#f5f5f5 , #f2f2f2);
+}
+
+#pagina-galeria main{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#pagina-galeria figure{
+    margin: 10px;
+    text-align: center;
+    filter: grayscale(1);
+    transition: 0.3s ease;
+}
+
+#pagina-galeria figure:hover{
+    filter: grayscale(0);
+}
+
+
+#pagina-galeria figure img{
+    border: 1px solid #555;
+    padding: 5px;
+}
+
+#pagina-galeria figure figcaption{
+    background: #555;
+    color: white;
+    padding: 5px;
+}
+
+blockquote{
+    font-weight: bold;
+    text-align: center;
+    font-family: Impact;
+    font-size: 38px;
+}
+
+.texto-com-imagem img{
+    float: left;
+    margin-right: 20px;
+}
+
+hr{
+    clear: both;
+}
+
+.texto-em-3-colunas{
+    columns: 3;
 }
