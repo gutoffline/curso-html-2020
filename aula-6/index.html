@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8"> 
         <title>Exemplos</title>
+        <link href="css/reset.css" rel="stylesheet" type="text/css">
         <link href="css/estilo.css" rel="stylesheet" type="text/css">
     </head>
     <body>
@@ -12,12 +13,29 @@
             <abbr title="Hypertext Markup Language">HTML</abbr>
             <form method="get" action="https://google.com/search">
                 <p>
-                    <label for="pesquisa">Faça sua pesquisa: </label>
+                    <label for="pesquisa">Faça sua pesquisa:</label>
                     <input type="search" name="q" id="pesquisa">
-                    <button type="submit">PESQUISAR</button>
+                    <button type="submit" class="botao">PESQUISAR</button>
                 </p>
             </form>
         </fieldset>
+
+        <div class="caixa">Elemento sem padding</div>
+        <div class="caixa-com-padding">Elemento com padding</div>
+
+        <div class="novo-botao">
+            <a href="https://uol.com.br">Clique aqui</a>
+        </div>
+
+        <section class="faixa">
+            <h1>Curso de HTML</h1>
+            <p>Este é mais um exemplo que estamos trabalhando no curso de HTML do Senac Americana.</p>
+        </section>
+
+        <input type="email" placeholder="DIGITE SEU EMAIL">
+        <span class="ajuda">
+            Preencha o campo com um e-mail válido, assim poderemos entrar em contato com você
+        </span>
 
     </body>
 </html>
