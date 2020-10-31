@@ -1,0 +1,40 @@
+ <article class="pensadores">
+        <h2>Frases de Rubem Alves</h2>
+        <img src="images/rubem-alves.jpg" alt="Rubem Alves">
+        <blockquote>
+            Não haverá borboletas se a vida não passar por longas e silenciosas metamorfoses.
+        </blockquote>
+        <blockquote>
+            Cartas de amor são escritas não para dar notícias, não para contar nada, mas para que mãos separadas se
+            toquem ao tocarem a mesma folha de papel.
+        </blockquote>
+        <blockquote>
+            Aquilo que está escrito no coração não necessita de agendas, porque a gente não esquece. O que a memória ama
+            fica eterno.
+        </blockquote>
+        <blockquote>
+            Mas na profissão, além de amar, tem de saber. E o saber leva tempo pra crescer.
+        </blockquote>
+        <blockquote>
+            Toda alma é uma música que se toca.
+        </blockquote>
+    </article>
+    <article class="pensadores">
+        <h2>Frases de Richard Feynman</h2>
+        <img src="images/richard-feynman.jpg" alt="Richard Feynman">
+        <blockquote>
+            Eu, um universo de átomos, um átomo no universo.
+        </blockquote>
+        <blockquote>
+            A ciência é aquilo que aprendemos sobre como não deixar enganar a nós mesmos
+        </blockquote>
+        <blockquote>
+            A realidade deve ter prioridade sobre as relações públicas, pois a natureza não pode ser enganada.
+        </blockquote>
+        <blockquote>
+            Estude muito o que mais lhe interessa da maneira mais indisciplinada, irreverente e original possível.
+        </blockquote>
+        <blockquote>
+            Nunca confunda educação com inteligência, você pode fazer um doutorado e ainda ser um idiota.
+        </blockquote>
+    </article>
