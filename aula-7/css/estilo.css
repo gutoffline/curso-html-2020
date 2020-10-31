@@ -1,5 +1,13 @@
+/* @font-face{
+    font-family: "Lobster";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Lobster"), url(/fonts/lobster.woff) format("woff");
+} */
+
 *{
     box-sizing: border-box;
+    font-family: "Ubuntu" !important;
 }
 
 .botao{
@@ -103,3 +111,154 @@
     position: absolute;
 }
 
+.dica::before{
+    content: "\261E";
+    margin-right: 10px;
+}
+
+blockquote{
+    margin: 20px;
+    color: #444;
+    font-style: italic;
+}
+
+blockquote::before,
+blockquote::after{
+    color: #990000;
+    font-size: 3em;
+    font-family: 'Times New Roman';
+}
+
+blockquote::before{
+    content: "\201C";
+}
+
+blockquote::after{
+    content: "\201D";
+}
+
+/* DOM - Document Object Model */
+/* REFATORAR */
+/* OOCSS - Object Oriented CSS */
+
+.button{
+    background-color: #999;    
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+.primary-button{
+    background-color: #389739;
+}
+
+.alert-button{
+    background-color: gold;
+    color: black;
+}
+
+.big-button{
+    font-size: 1.1em;
+}
+
+.small-button{
+    font-size: 0.9em;
+}
+
+.icon-button::before{
+    content: "\261E";
+    margin-left: 20px;
+}
+
+table{
+    width: 500px;
+    margin: 0 auto;
+}
+
+td{
+    border: 2px dotted #666;
+    padding: 5px;
+}
+
+td a{
+    color: #3b5998;
+}
+
+.negativo,
+.positivo,
+.acoes{
+    text-align: right;
+}
+
+caption,
+.positivo,
+.negativo{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.negativo{
+    color: red;
+}
+
+.positivo{
+    color: green;
+}
+
+.acoes a{
+    font-size: 0.9em;
+    color: white;
+    padding: 2px 5px;
+    background-color: #3b5998;
+    text-decoration: none;
+}
+
+@media print{
+    *{
+        background: transparent !important;
+        border-color: #000 !important;
+        color: #000 !important;
+    }
+
+    a{
+        text-decoration: underline !important;
+    }
+
+    a[href]::after{
+        content: " (" attr(href) ") ";
+    }
+
+    article{
+        page-break-before: always;
+    }
+
+    p{
+        page-break-inside: avoid;
+    }
+
+    table{
+        width: 100%;
+    }
+
+    td{
+        border-color: #000;
+    }
+
+    .acoes{
+        display: none;
+    }
+
+    .negativo::before{
+        content: " - ";
+    }
+
+    .positivo::before{
+        content: " + ";
+    }
+
+    form{
+        display: none;
+    }
+}
