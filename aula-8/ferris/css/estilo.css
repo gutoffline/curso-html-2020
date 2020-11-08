@@ -134,3 +134,61 @@ header{
 .linkedin:hover{
     background: url(../images/social_icons.png) -121px -57px no-repeat;
 }
+
+.campo, 
+.mensagem{
+    width: 96%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    color: #6c595f;
+    box-shadow: 1px 1px 2px #999 inset;
+}
+
+.mensagem{
+    height: 100px;
+}
+
+.enviar{
+    background: #6c595f;
+    border: none;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 3px 10px;
+    float: right;
+}
+
+.conteudo-portifolio{
+    width: 410px;
+    display: inline-block;
+    padding-bottom: 40px;
+    margin-left: 40px;
+}
+
+.link-thumbs{
+    width: 190px;
+    height: 156px;
+    border-radius: 10px;
+    margin: 0 10px 20px 0;
+    text-decoration: none;
+    box-shadow: 1px 1px 2px #999;
+    opacity: 0.6;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.link-thumbs:hover{
+    opacity: 1;
+    transform: rotate(-15deg);
+}
+
+.meu-video{
+    width: 380px;
+    padding: 10px;
+    border-radius: 8px;
+    background: #c9cec8;
+    box-shadow: 1px 1px 2px #999;
+}
