@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Web | Cadastro de Funcionário</title>
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Cadastros</li>
+            <li>Relatórios</li>
+            <li>Consultas</li>
+            <li>Sair</li>
+        </ul>
+    </nav>
+
+    <form action="cadastrar.php" method="post">
+        <input placeholder="Nome" required name="nome" minlength="3" maxlength="20"> <br>
+        <input type="number" placeholder="idade" min="15" max="99"><br>
+        <label>data de nascimento</label> <input type="date">
+        <br>
+        Tamanho da camiseta:
+        <input type="radio" value="pequeno" name="tamanho-camiseta">P
+        <input type="radio" value="médio" name="tamanho-camiseta">M
+        <input type="radio" value="grande" name="tamanho-camiseta">G
+
+        <br>
+        <select name="tamanho-calcado">
+            <option value="">Tamanho do calçado</option>
+            <option value="35">35</option>
+            <option value="36">36</option>
+            <option value="37">37</option>
+            <option value="38">38</option>
+        </select>
+
+        <br>
+        <fieldset>
+            <legend>Atividades extras</legend>
+            <input type="checkbox" name="at1" value="inglês">Inglês
+            <input type="checkbox" name="at2" value="academia">Academia
+            <input type="checkbox" name="at3" value="meditação">Meditação
+        </fieldset>
+
+        <br>
+        Foto:
+        <input type="file"  accept=".jpg,.jpeg,.png">
+        <br>
+        <textarea placeholder="Observações"></textarea>
+
+        <br>
+        <input type="hidden" value="Cadastro de funcionário">
+
+        <br>
+        <input type="color">
+        <br>
+        <input type="range" min="5" max="25" step="5">
+        <br>
+        <input type="datetime-local">
+        <br>
+        <button type="submit">SALVAR</button>
+</body>
+</html>

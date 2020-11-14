@@ -1,0 +1,75 @@
+.formulario-login{
+    background: rgba(255, 0, 0, 0.3);
+    /* background: linear-gradient(130deg , #ff0000 , #00ff00); */
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px;
+    box-sizing: border-box;
+}
+label{
+    text-shadow: 1px 1px 1px seagreen;
+}
+.formulario-login input{
+    border-radius: 3px;
+    padding: 5px;
+    margin: 5px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.25) inset;
+    border: 1.5px solid black
+}
+
+.formulario-login input:focus{
+    border-color: #35861b;
+    box-shadow: 0 0 5px #35861b;
+    outline: none;
+}
+
+nav ul{
+    height: 35px;
+    width: 410px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    background: #ccc;
+    color: white;
+    border: 1px solid rgba(0,0,0,0.3);
+    padding: 0;
+}
+
+nav ul li{
+    line-height: 35px;
+    font-size: 0.9em;
+    width: 100%;
+    text-align: center;
+
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul li:first-child{
+    border-left: none
+}
+
+nav ul li:last-child{
+    border-right: none;
+}
+
+
+@media only screen and (max-width: 400px) and (min-width: 300px){
+/* @media only screen and(orientation: landscape){ */
+    body{
+        background: lightblue;
+    }
+
+    label{
+        display: none;
+    }
+
+    input{
+        width: 100%;
+    }
+}
+
